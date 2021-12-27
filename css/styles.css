@@ -30,7 +30,7 @@ h5,
 h6,
 p,
 ul {
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 ul {
@@ -38,7 +38,7 @@ ul {
 }
 .auth-nav {
   display: flex;
-  margin-left: auto;
+  margin-left: 331px;
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -62,7 +62,6 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
 .container-hero {
   display: flex;
@@ -73,12 +72,28 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
-  
 }
+.container-portfolio {
+  display: flex;
+  align-items: center;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.button {
+.button-portfolio {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  justify-content: center;
+}
+.button-portfolio-title:not(:last-child) {
+  margin-right: 8px;
+}
+.hero .button {
   margin-top: 30px;
   border-radius: 4px;
   padding: 10px 32px;
@@ -106,7 +121,6 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -117,15 +131,10 @@ ul {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
-  color: var(--accent-color);
-}
 
 .hero {
   background-color: var(--hero-color);
   color: var(--beckground-color);
-}
-.hero {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -133,7 +142,9 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
+.container-hero {
+  padding: 200px 267px;
+}
 .logo-two {
   color: var(--accent-color);
 }
@@ -249,15 +260,7 @@ footer {
 .title-portfolio {
   display: none;
 }
-.button-filter-all {
-  color: var(--button-text-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  cursor: pointer;
-}
+
 .button-filter {
   color: var(--primary-text-color);
   background-color: var(--button-color);
@@ -266,17 +269,20 @@ footer {
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
+  padding: 6px 22px;
+  border-color: transparent;
 }
+
 .button-filter:hover,
 .button-filter:focus {
   color: var(--button-text-color);
   background-color: var(--button-header-color);
 }
+
 .filter {
   box-sizing: border-box;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -314,7 +320,6 @@ footer {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
 .adres .real {
   margin-bottom: 9px;
@@ -324,4 +329,12 @@ footer {
 }
 .real a {
   color: var(--button-text-color);
+}
+
+.section-filter {
+  align-items: center;
+  width: 1230px;
+
+  margin: 0 auto;
+  padding: 0 15px;
 }

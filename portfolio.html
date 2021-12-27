@@ -13,41 +13,44 @@
 </head>
 <body>
 <header class="page-header">
-    <nav class="container">
+    <div class="container">
         <a href="" class="logo"><span class="logo-two">Web</span>Studio</a>
-        <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-        </ul>
-
+        <nav>
+            <ul class="site-nav">
+                <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+        </nav>
         <ul class="auth-nav">
             <li class="item"><a href="" class="auth-nav1">info@devstudio.com</a></li>
             <li class="item"><a href="tel:+380991111111" class="auth-nav1">+38 099 111 11 11</a></li>
         </ul>
-    </nav>
+    </div>
 </header>
 <main>
     <section>
         <h1 class="title-portfolio">Примеры робот</h1>
-<ul class="container">
-    <li>
-        <button type="button" class="button-filter-all">Все </button>
+<div class="container-portfolio">
+        <ul class="button-portfolio">
+    <li class="button-portfolio-title">
+        <button type="button" class="button-filter">Все </button>
     </li>
-    <li>
+    <li class="button-portfolio-title">
         <button type="button" class="button-filter">Веб-сайты </button>
     </li>
-    <li>
+    <li class="button-portfolio-title">
         <button type="button" class="button-filter">Приложения </button>
     </li>
-    <li>
+    <li class="button-portfolio-title">
         <button type="button" class="button-filter">Дизайн </button>
     </li>
-    <li>
+    <li class="button-portfolio-title">
         <button type="button" class="button-filter">Маркетинг </button>
     </li>
 </ul>
-<div>
+</div>
+<div class="section-filter"> 
     <ul class="filter">
     <li class="filter-element"> 
         <a href="">
@@ -117,21 +120,23 @@
 </section>
 </main>
 <footer>
-    <a href="" class="logo"><span class="logo-two">Web<span class="logo-three">Studio</span></a>
-    <address>
-        <ul class="adres">
-            <li>
-                <a href="https://goo.gl/maps/MabtzVLt6xjvMvCGA" target="_blank" rel="noopener norefferer"
-                    class="adres-one">г. Киев, пр-т Леси Украинки, 26</a>
-            </li>
-            <li>
-                <a href="mailto:info@example.com" class="adres-two">info@example.com</a>
-            </li>
-            <li>
-                <a href="tel:+380991111111" class="adres-two">+38 099 111 11 11</a>
-            </li>
-        </ul>
-    </address>
+    <div class="footer">
+        <a href="" class="logo-header"><span class="logo-two">Web<span class="logo-three">Studio</span></a>
+        <address>
+            <ul class="adres">
+                <li class="real">
+                    <a href="https://goo.gl/maps/MabtzVLt6xjvMvCGA" target="_blank" rel="noopener norefferer"
+                        class="adres-one">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="mail">
+                    <a href="mailto:info@example.com" class="adres-two">info@example.com</a>
+                </li>
+                <li>
+                    <a href="tel:+380991111111" class="adres-two">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+    </div>
 </footer>
 </body>
 </html>
