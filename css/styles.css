@@ -38,7 +38,7 @@ ul {
 }
 .auth-nav {
   display: flex;
-  margin-left: 331px;
+  margin-left: auto;
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -76,7 +76,7 @@ ul {
 .container-portfolio {
   display: flex;
   align-items: center;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -109,6 +109,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
 }
 .site-nav {
   display: flex;
@@ -134,6 +135,11 @@ ul {
 
 .hero {
   background-color: var(--hero-color);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
   color: var(--beckground-color);
   font-weight: 900;
   font-size: 44px;
@@ -143,13 +149,22 @@ ul {
   text-transform: uppercase;
 }
 .container-hero {
-  padding: 200px 267px;
+  width: 696px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .logo-two {
   color: var(--accent-color);
 }
 .logo {
   color: var(--primary-text-color);
+  margin: auto;
 }
 .logo-three {
   color: var(--logo-color);
@@ -182,8 +197,10 @@ ul {
 
 .work {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin: auto;
+}
+.work-title {
+  width: 270px;
 }
 .work-images {
   display: flex;
