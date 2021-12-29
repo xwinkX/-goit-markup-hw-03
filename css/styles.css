@@ -10,6 +10,9 @@
   --logo-color: rgb(245, 238, 238);
   --adress-color: rgba(255, 255, 255, 0.6);
   --comand-background-color: rgba(245, 244, 250, 1);
+  --filter-color: #212121;
+  --filter-item-color: #757575;
+  --border-color: #eeeeee;
 }
 html {
   box-sizing: border-box;
@@ -30,11 +33,14 @@ h5,
 h6,
 p,
 ul {
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 ul {
   list-style: none;
+}
+a {
+  margin: 0;
 }
 .auth-nav {
   display: flex;
@@ -57,7 +63,7 @@ ul {
 .container {
   display: flex;
   align-items: center;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -67,7 +73,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -75,6 +81,7 @@ ul {
 }
 .container-portfolio {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 1200px;
   padding-left: 15px;
@@ -85,11 +92,10 @@ ul {
 .button-portfolio {
   display: flex;
   width: 100%;
-  padding: 10px;
   margin-bottom: 50px;
-  margin-top: 94px;
   justify-content: center;
 }
+
 .button-portfolio-title:not(:last-child) {
   margin-right: 8px;
 }
@@ -179,7 +185,6 @@ ul {
   text-decoration: none;
 }
 .logo-header {
-  margin-top: 60px;
   padding-bottom: 20px;
   text-decoration: none;
 }
@@ -189,15 +194,31 @@ ul {
 .command-title {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 94px;
+  align-items: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
+.participant {
+  background: var(--button-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.participant-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .command-title .participant:not(:last-child) {
   margin-right: 30px;
 }
 
 .work {
   display: flex;
-  margin: auto;
 }
 .work-title {
   width: 270px;
@@ -205,12 +226,15 @@ ul {
 .work-images {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 94px;
 }
 .work-images .images:not(:last-child) {
   margin-right: 30px;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .work-one {
   color: var(--primary-text-color);
   line-height: 1.14;
@@ -218,7 +242,7 @@ ul {
   margin-bottom: 10px;
 }
 .work-two {
-  line-height: 24px;
+  line-height: 1.7;
 }
 .work-three {
   color: var(--text-color);
@@ -227,6 +251,7 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 .title {
@@ -235,7 +260,6 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  padding-top: 94px;
 }
 .title-one {
   color: var(--primary-text-color);
@@ -245,12 +269,8 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
-  padding-bottom: 10px;
 }
-.adres {
-  padding-bottom: 60px;
-}
+
 .adres-one {
   color: var(--beckground-color);
   text-decoration: none;
@@ -270,10 +290,6 @@ ul {
   color: var(--accent-color);
 }
 
-footer {
-  background-color: var(--hero-color);
-}
-
 .title-portfolio {
   display: none;
 }
@@ -288,6 +304,7 @@ footer {
   cursor: pointer;
   padding: 6px 22px;
   border-color: transparent;
+  border-radius: 4px;
 }
 
 .button-filter:hover,
@@ -317,26 +334,48 @@ footer {
 }
 
 .title-filter {
-  color: var(--primary-text-color);
-  font-weight: bold;
+  color: var(--filter-color);
   font-size: 18px;
+  font-weight: bold;
   line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.filter-item {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--filter-item-color);
 }
 
 .filter a {
   text-decoration: none;
 }
-.filter p {
-  color: var(--text-color);
+
+.filter-box {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  width: 370px;
 }
+
 .footer {
+  background-color: var(--hero-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container-footer {
   display: flex;
   flex-direction: column;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.adres {
+  font-style: normal;
 }
 .adres .real {
   margin-bottom: 9px;
@@ -346,12 +385,4 @@ footer {
 }
 .real a {
   color: var(--button-text-color);
-}
-
-.section-filter {
-  align-items: center;
-  width: 1230px;
-
-  margin: 0 auto;
-  padding: 0 15px;
 }
