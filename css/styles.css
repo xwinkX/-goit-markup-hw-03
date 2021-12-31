@@ -13,6 +13,7 @@
   --filter-color: #212121;
   --filter-item-color: #757575;
   --border-color: #eeeeee;
+  --border-header-color: #ececec;
 }
 html {
   box-sizing: border-box;
@@ -22,7 +23,7 @@ body {
   font-family: roboto, sans-serif;
   color: var(--text-color);
   background-color: var(--beckground-color);
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   font-size: 14px;
 }
 h1,
@@ -220,7 +221,7 @@ a {
 .work {
   display: flex;
 }
-.work-title {
+.work-tytle {
   width: 270px;
 }
 .work-images {
@@ -243,6 +244,7 @@ img {
 }
 .work-two {
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 .work-three {
   color: var(--text-color);
@@ -260,6 +262,7 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 94px;
 }
 .title-one {
   color: var(--primary-text-color);
@@ -274,13 +277,13 @@ img {
 .adres-one {
   color: var(--beckground-color);
   text-decoration: none;
-  line-height: 1.7x;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .adres-two {
   color: var(--adress-color);
   text-decoration: none;
-  line-height: 1.7x;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .adres .adres-one:hover,
@@ -385,4 +388,7 @@ img {
 }
 .real a {
   color: var(--button-text-color);
+}
+.page-header {
+  border-bottom: 1px solid var(--border-header-color);
 }
