@@ -62,13 +62,15 @@ a {
   color: var(--accent-color);
 }
 .container {
-  display: flex;
-  align-items: center;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.container-header {
+  display: flex;
+  align-items: center;
 }
 .container-hero {
   display: flex;
@@ -262,7 +264,6 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-top: 94px;
 }
 .title-one {
   color: var(--primary-text-color);
@@ -318,7 +319,6 @@ img {
 
 .filter {
   box-sizing: border-box;
-  width: 1200px;
 
   display: flex;
   flex-wrap: wrap;
@@ -360,7 +360,6 @@ img {
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
-  width: 370px;
 }
 
 .footer {
