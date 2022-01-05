@@ -181,7 +181,7 @@ a {
   text-decoration: none;
 }
 .logo-header {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   text-decoration: none;
 }
 .command {
@@ -215,6 +215,7 @@ a {
 
 .work {
   display: flex;
+  justify-content: space-between;
 }
 .work-tytle {
   width: 270px;
